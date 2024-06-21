@@ -1,0 +1,18 @@
+// Random jokes generator
+const jokesArray = [];
+const createJokes = (question, answer) => {
+  return {
+    question,
+    answer,
+  };
+};
+
+// jokes data
+jokesArray.push(
+  createJokes("Why did the bicycle fall over?", "Because it was two tired.")
+);
+jokesArray.push(createJokes("What do elves learn in school?", "The elf-abet"));
+jokesArray.push(
+  createJokes("What do sprinters eat before they race?", "Nothing. They fast.")
+);
+console.log(jokesArray);
