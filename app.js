@@ -15,4 +15,10 @@ jokesArray.push(createJokes("What do elves learn in school?", "The elf-abet"));
 jokesArray.push(
   createJokes("What do sprinters eat before they race?", "Nothing. They fast.")
 );
-console.log(jokesArray);
+
+const randomJoke = (arr) => {
+  let jokeIndex = Math.floor(Math.random() * arr.length);
+  return arr[jokeIndex].question + "\n" + arr[jokeIndex].answer;
+};
+
+console.log(randomJoke(jokesArray));
